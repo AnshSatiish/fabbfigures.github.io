@@ -255,17 +255,4 @@ form input[type="submit"]:hover {
     main h1 {
         font-size: 1.8em;
     }
-
-    main p, main ul {
-        font-size: 0.9em;
-    }
-
-    form {
-        width: 90%;
-    }
-
-    .about-img {
-        width: 150px; /* Further reduced size for very small screens */
-        height: 150px; /* Further reduced size for very small screens */
-    }
 }
