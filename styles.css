@@ -16,6 +16,18 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 header nav ul {
     list-style-type: none;
     margin: 0;
@@ -199,15 +211,41 @@ form input[type="submit"]:hover {
 }
 
 /* Responsive Design */
+.hamburger-menu {
+    display: none;
+}
+
 @media (max-width: 768px) {
-    header nav ul {
+    .hamburger-menu {
         display: flex;
         flex-direction: column;
-        padding: 0;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #FFA726;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header nav ul.show {
+        display: flex;
     }
 
     header nav ul li {
-        display: block;
         margin: 10px 0;
     }
 
@@ -242,16 +280,6 @@ form input[type="submit"]:hover {
 }
 
 @media (max-width: 480px) {
-    header nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
     main h1 {
         font-size: 1.8em;
     }
