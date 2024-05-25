@@ -7,24 +7,21 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    position: relative; /* Add position relative to allow positioning of the hamburger menu */
 }
 
+/* Adjust the header styles for mobile view */
 header {
     background: #FFA726; /* Orange header */
     color: white;
-    padding: 1em 0;
+    padding: 1em 20px; /* Increase padding to avoid overlap with hamburger menu */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure positioning context for dropdown */
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 header .logo {
@@ -32,31 +29,60 @@ header .logo {
     font-weight: bold;
 }
 
+/* Adjust the hamburger menu styles for mobile view */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Adjust the navigation styles for mobile view */
+header nav {
+    display: none; /* Hide the navigation by default */
+    position: fixed; /* Fixed position to overlay on the page */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1; /* Ensure navigation appears above other elements */
+}
+
 header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    position: relative;
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 0; /* Position at the left */
+    transform: translateY(-50%); /* Adjust to vertically center */
+    width: 100%; /* Full width */
 }
 
 header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    position: relative;
+    display: block;
+    margin: 20px 0; /* Adjust spacing */
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em; /* Adjust font size */
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
     color: #ffd700;
 }
-
 header nav ul li:hover .dropdown {
     display: block;
 }
