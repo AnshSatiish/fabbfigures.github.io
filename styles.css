@@ -124,7 +124,6 @@ header nav ul li a:hover {
     }
 }
 
-
 header nav ul li:hover .dropdown {
     display: block;
 }
@@ -369,4 +368,29 @@ form input[type="submit"]:hover {
         width: 150px; /* Further reduced size for very small screens */
         height: 150px; /* Further reduced size for very small screens */
     }
+}
+
+/* Stylish button for "Book Now" */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #FFA726;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e59426;
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    background-color: #d4831f;
+    transform: translateY(0);
 }
