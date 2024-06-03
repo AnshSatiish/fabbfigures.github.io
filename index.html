@@ -94,6 +94,15 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('header nav ul');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 </html>
