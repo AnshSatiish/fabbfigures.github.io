@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profession Numerology - Numerology Insights</title>
+    <title>DOB Analysis - Numerology Insights</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="..\styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">Numerology Insights</div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="..\index.html">Home</a></li>
-                    <li><a href="..\about.html">About Us</a></li>
-                    <li>
-                        <a href="">Services</a>
-                        <ul class="dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-menu">
                             <li><a href="dob.html">DOB Analysis</a></li>
                             <li><a href="name.html">Name Numerology</a></li>
                             <li><a href="number.html">Mobile Number Numerology</a></li>
@@ -25,30 +30,26 @@
                             <li><a href="remedies.html">Remedies</a></li>
                         </ul>
                     </li>
-                    <li><a href="..\contact.html">Contact Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>
+            
         </div>
     </header>
     <main>
         <section class="service-details">
             <div class="container">
-                <h2>Profession Numerology</h2>
-                <p>Profession Numerology analyzes the numeric vibrations associated with your birth date and name to provide insights into your ideal career path, work style, and potential success in different professions.</p>
-                <p>Our experienced numerologists will interpret the significance of your numerological profile and offer guidance on choosing a career that aligns with your strengths, passions, and life purpose.</p>
-                <p>Whether you're a student exploring career options or a professional seeking a career change, our Profession Numerology service can provide valuable insights to help you make informed decisions about your professional life.</p>
-                <a href="C:\Users\aniti\OneDrive\Desktop\ANSHY\Other_Stuff\Code_Projects\Numerology\contact.html" class="cta-button">Book Now</a>
+                <h2>DOB Analysis</h2>
+                <p>DOB Analysis is a comprehensive numerological analysis based on your date of birth. It reveals insights into your personality, strengths, challenges, and life path based on the numeric vibrations associated with your birth date.</p>
+                <p>Our expert numerologists will interpret the significance of your birth date and provide you with valuable insights that can help you navigate through life with clarity and confidence.</p>
+                <p>Whether you're curious about your life purpose or seeking guidance on important life decisions, our DOB Analysis service can provide you with the clarity and direction you need.</p>
+                <a href="../contact.html" class="cta-button">Book Now</a>
             </div>
         </section>
     </main>
     <footer>
         <!-- Footer content -->
     </footer>
-    <script>
-        // Toggle dropdown menu in mobile view
-        document.querySelector('.hamburger-menu').addEventListener('click', () => {
-            document.querySelector('header nav ul').classList.toggle('show');
-        });
-    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
