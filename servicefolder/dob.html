@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name Numerology - Numerology Insights</title>
+    <title>DOB Analysis - Numerology Insights</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -11,11 +11,6 @@
     <header>
         <div class="container">
             <div class="logo">Numerology Insights</div>
-            <div class="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -39,17 +34,22 @@
     <main>
         <section class="service-details">
             <div class="container">
-                <h2>Name Numerology</h2>
-                <p>Name Numerology analyzes the numeric vibrations associated with your name. It provides insights into your personality, strengths, challenges, and life path based on the letters of your name.</p>
-                <p>Our experienced numerologists will interpret the significance of your name and offer guidance on how to align your name with your life's purpose and goals.</p>
-                <p>Whether you're considering a name change or seeking deeper self-understanding, our Name Numerology service can provide valuable insights and guidance.</p>
-                <a href="../contact.html" class="cta-button">Book Now</a>
+                <h2>DOB Analysis</h2>
+                <p>DOB Analysis is a comprehensive numerological analysis based on your date of birth. It reveals insights into your personality, strengths, challenges, and life path based on the numeric vibrations associated with your birth date.</p>
+                <p>Our expert numerologists will interpret the significance of your birth date and provide you with valuable insights that can help you navigate through life with clarity and confidence.</p>
+                <p>Whether you're curious about your life purpose or seeking guidance on important life decisions, our DOB Analysis service can provide you with the clarity and direction you need.</p>
+                <a href="contact.html" class="cta-button">Book Now</a>
             </div>
         </section>
     </main>
     <footer>
         <!-- Footer content -->
     </footer>
-    <script src="../script.js"></script>
+    <script>
+        // Toggle dropdown menu in mobile view
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('header nav ul').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
