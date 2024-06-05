@@ -41,6 +41,32 @@ header .logo {
     margin: 3px 0;
 }
 
+/* Appointment Details Section */
+
+.appointment-details ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-details li {
+    flex: 1 1 calc(45% - 10px); /* Adjust the width as needed */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.appointment-details li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Adjust the navigation styles */
 header nav ul {
     list-style-type: none;
