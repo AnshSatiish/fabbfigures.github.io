@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('show');
-        console.log("CLICKED");
     });
 });
+
+function toggleMobileMenu(menu) {
+menu.classList.toggle('open');
+}
