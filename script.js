@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger-menu');
-    const navMenu = document.querySelector('header nav ul');
+    const navMenu = document.querySelector('.mobile-menu');
 
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('show');
@@ -8,5 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function toggleMobileMenu(menu) {
-menu.classList.toggle('open');
+    menu.classList.toggle('open');
 }

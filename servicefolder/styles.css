@@ -217,7 +217,7 @@ form input[type="submit"]:hover {
 
 /* Responsive Design */
 .hamburger-menu {
-    display: none;
+    display:block;
 }
 
 @media (max-width: 768px) {
