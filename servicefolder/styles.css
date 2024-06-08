@@ -3,7 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background: #8CCB85; /* Slightly darker green background for the entire page */
+    background: #F0E68C; /* Lime yellow background for the entire page */
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #FFA726; /* Orange header */
+    background: #8CCB85; /* Green header */
     color: white;
     padding: 1em 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@ header nav ul li:hover .dropdown {
 header .dropdown {
     display: none;
     position: absolute;
-    background: #FFA726; /* Orange dropdown */
+    background: #8CCB85; /* Green dropdown */
     top: 100%;
     left: 0;
     min-width: 200px;
@@ -84,7 +84,7 @@ header .dropdown li a {
 }
 
 header .dropdown li a:hover {
-    background: #e59426; /* Slightly darker orange on hover */
+    background: #7bb376; /* Slightly darker green on hover */
 }
 
 main {
@@ -93,6 +93,7 @@ main {
     flex: 1; /* Ensure main takes up remaining space */
     opacity: 0; /* Initial state for fade-in */
     animation: fadeIn 1.5s forwards; /* Trigger animation */
+    background: #FFF9C4; /* Light yellow background for main */
 }
 
 main h1 {
@@ -129,7 +130,7 @@ main ul li:hover {
 }
 
 footer {
-    background: #FFA726; /* Orange footer */
+    background: #8CCB85; /* Green footer */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -192,7 +193,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background: #FFA726;
+    background: #8CCB85;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -202,7 +203,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #e59426; /* Slightly darker orange on hover */
+    background: #7bb376; /* Slightly darker green on hover */
 }
 
 /* Keyframes for Fade-In Animation */
@@ -217,7 +218,7 @@ form input[type="submit"]:hover {
 
 /* Responsive Design */
 .hamburger-menu {
-    display:block;
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -238,7 +239,7 @@ form input[type="submit"]:hover {
         display: none;
         flex-direction: column;
         text-align: center;
-        background: #FFA726;
+        background: #8CCB85;
         position: absolute;
         top: 100%; /* Position below the header */
         left: 0;
